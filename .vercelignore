@@ -1,0 +1,56 @@
+# Dependency directories
+node_modules/
+.pnpm-store/
+
+# Next.js build output
+.next/
+out/
+
+# Production build output
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Large binary files & tools that should not be deployed
+.bin/
+ffmpeg/
+*.exe
+*.dmg
+*.iso
+*.bin
+*.zip
+**/*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Media Files (Block giant videos)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Temp files
+*.part
+*.tmp
+*.temp
+*.log
+*.ytdl
+
+# OS files
+.DS_Store
+Thumbs.db
