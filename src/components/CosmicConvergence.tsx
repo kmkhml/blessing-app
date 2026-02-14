@@ -144,9 +144,10 @@ export default function CosmicConvergence({ resultData, recipient, onCanvasReady
   }, [captureRef]);
 
   return (
-    <div className="fixed inset-0 -z-10 bg-[#02020A]">
+    <div className="fixed inset-0 -z-10 bg-[#02020A] pointer-events-none">
       <Canvas 
         dpr={[1, 2]} // Limit pixel ratio to prevent shimmering on high-DPI screens
+        style={{ pointerEvents: 'auto' }} // Re-enable pointer events for the canvas itself for interaction
         camera={{ position: [0, 0, cameraZ], fov: 50 }}
         gl={{ 
             preserveDrawingBuffer: true, 
