@@ -6,7 +6,10 @@
 }
 
 @layer base {
+  html {
+    @apply overflow-y-auto;
+  }
   body {
-    @apply bg-black text-slate-100 min-h-screen overflow-x-hidden font-lato;
+    @apply bg-black text-slate-100 min-h-screen overflow-x-hidden font-lato overflow-y-auto;
   }
 }

@@ -186,7 +186,7 @@ function App() {
       {/* Language Switcher */}
       <button 
         onClick={toggleLanguage}
-        className="fixed top-4 right-4 z-50 flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-md rounded-full border border-slate-600 hover:bg-slate-700 hover:border-purple-400 transition-all duration-300 group"
+        className="fixed top-4 right-4 z-[100] cursor-pointer flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-md rounded-full border border-slate-600 hover:bg-slate-700 hover:border-purple-400 transition-all duration-300 group"
       >
         <Globe className="w-4 h-4 text-purple-400 group-hover:rotate-180 transition-transform duration-500" />
         <span className="text-sm font-cinzel text-slate-300 group-hover:text-white">
@@ -194,7 +194,7 @@ function App() {
         </span>
       </button>
 
-      <div className="relative z-50 container mx-auto px-4 py-12 md:py-8 flex flex-col items-center justify-center min-h-screen">
+      <div className="relative z-50 container mx-auto px-4 py-12 md:py-8 flex flex-col justify-start md:justify-center items-center min-h-screen pt-24 md:pt-0">
         <AnimatePresence>
           {phase === 'idle' && (
             <motion.h1 
